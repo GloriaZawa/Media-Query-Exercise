@@ -1,0 +1,36 @@
+body {
+    font-size: 18px; /* Larger font size */
+    margin: 10px;    /* Add small margins to the page edges */
+}
+
+#main-heading {
+    font-size: 24px; /* Smaller font size for h1 */
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: lightblue; /* Light blue background */
+        font-size: 20px;           /* Adjust font size */
+        margin: 20px;              /* Increase page margins */
+    }
+
+    #images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+        gap: 10px; /* Space between images */
+    }
+}
+@media (min-width: 1000px) {
+    body {
+        background-color: lavender; /* Lavender background */
+        font-size: 22px;           /* Further adjust font size */
+        margin: 40px;              /* Larger page margins */
+        max-width: 1200px;         /* Restrict max width */
+        margin: 0 auto;            /* Center the page */
+    }
+
+    #images {
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout */
+        gap: 15px; /* Space between images */
+    }
+}
